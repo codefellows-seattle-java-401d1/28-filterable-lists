@@ -1,56 +1,63 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/list"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".DetailActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="10sp">
 
-        <TextView
-            android:id="@+id/name_detail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="name"
-            android:textSize="40sp"
-            android:textStyle="bold" />
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--tools:context=".DetailActivity">-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingTop="5sp">
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:padding="10sp">-->
 
-            <TextView
-                android:id="@+id/category_detail"
-                android:layout_width="0sp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="category"
-                android:textAlignment="textStart"
-                android:textSize="25sp" />
+        <!--<TextView-->
+            <!--android:id="@+id/name_detail"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="name"-->
+            <!--android:textSize="40sp"-->
+            <!--android:textStyle="bold" />-->
 
-            <TextView
-                android:id="@+id/type_detail"
-                android:layout_width="0sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:layout_weight="1"
-                android:text="type"
-                android:textAlignment="textEnd"
-                android:textSize="25sp" />
-        </LinearLayout>
-        <TextView
-            android:id="@+id/description_detail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="description"
-            android:textSize="18sp" />
-    </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingTop="5sp">-->
 
-</android.support.constraint.ConstraintLayout>
+            <!--<TextView-->
+                <!--android:id="@+id/category_detail"-->
+                <!--android:layout_width="0sp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="category"-->
+                <!--android:textAlignment="textStart"-->
+                <!--android:textSize="25sp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/type_detail"-->
+                <!--android:layout_width="0sp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginEnd="16dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="type"-->
+                <!--android:textAlignment="textEnd"-->
+                <!--android:textSize="25sp" />-->
+        <!--</LinearLayout>-->
+        <!--<TextView-->
+            <!--android:id="@+id/description_detail"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="description"-->
+            <!--android:textSize="18sp" />-->
+    <!--</LinearLayout>-->
+
+<!--</android.support.constraint.ConstraintLayout>-->
