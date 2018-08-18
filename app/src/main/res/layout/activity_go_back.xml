@@ -6,11 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".GoBack">
 
+    <ImageView
+        android:id="@+id/header"
+        android:src="@drawable/fabric_header"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <android.support.constraint.ConstraintLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/header"
         app:layout_constraintBottom_toTopOf="@+id/goBack">
     </android.support.constraint.ConstraintLayout>
 
