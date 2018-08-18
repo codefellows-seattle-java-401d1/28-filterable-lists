@@ -6,26 +6,34 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class FriendsActivity extends AppCompatActivity {
 
-    private Button seeMyFriends;
+    private Button seeEachFriend;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_friends);
 
         // Add reference to buttons
-        seeMyFriends = findViewById(R.id.seeMyFriends);
+        seeEachFriend = findViewById(R.id.seeEachFriend);
 
-        attachClickListener(seeMyFriends, FriendsActivity.class);
+        attachClickListener(seeEachFriend, FriendsDetailActivity.class);
+
+        Button goBack = findViewById(R.id.goBack);
+        goBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 
     public void attachClickListener(Button button, final Class class_) {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, class_);
+                Intent intent = new Intent(FriendsActivity.this, class_);
                 startActivity(intent);
             }
         });
