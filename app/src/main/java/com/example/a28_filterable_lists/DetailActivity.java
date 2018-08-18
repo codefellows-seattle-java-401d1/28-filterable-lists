@@ -30,8 +30,7 @@ public class DetailActivity extends AppCompatActivity {
         goBackButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DetailActivity.this, MainActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
 
