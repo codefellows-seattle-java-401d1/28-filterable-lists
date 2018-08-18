@@ -16,7 +16,7 @@ public class DetailFragment extends Fragment{
 //    public TextView category;
 //    public TextView type;
 //    public TextView description;
-//    public Button goBackButton;
+    public Button goBackButton;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -28,10 +28,16 @@ public class DetailFragment extends Fragment{
 //        type = findViewById(R.id.type_detail);
 //        description = findViewById(R.id.description_detail);
 //
-//        goBackButton = findViewById(R.id.goBack);
-
-
         View view = inflater.inflate(R.layout.activity_detail, container, false);
+        goBackButton = view.findViewById(R.id.goBack);
+        goBackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getActivity().finish();
+            }
+        });
+
+
         return view;
 
     }
