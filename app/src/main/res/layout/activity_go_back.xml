@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".GoBack">
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/header"
@@ -19,16 +18,14 @@
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@+id/header"
-        app:layout_constraintBottom_toTopOf="@+id/goBack">
-    </android.support.constraint.ConstraintLayout>
+        app:layout_constraintBottom_toTopOf="@+id/goBack"
+        app:layout_constraintTop_toTopOf="@+id/header" />
 
     <Button
+        android:text="Back to Main"
         android:id="@+id/goBack"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
