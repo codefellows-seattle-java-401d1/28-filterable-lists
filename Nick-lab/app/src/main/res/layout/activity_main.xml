@@ -5,26 +5,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10sp"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/intro"
+        android:id="@+id/mainText"
         android:textSize="30sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/friend_intro"
+        android:text="Click below to go view your friends"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/seeFriends"
-        android:text="@string/see_more"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/intro"/>
 
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/mainText"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Take a peek!"
+            android:id="@+id/seeFriends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
