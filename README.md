@@ -38,3 +38,7 @@ __Thanks to:__
 
 
 __Resources__
+
+- Open Source Data Sets to [choose from](https://github.com/awesomedata/awesome-public-datasets)
+
+- Final data source chosen from StarWars API [Species Data](https://swapi.co/api/species)
