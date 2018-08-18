@@ -16,6 +16,7 @@ public class DetailActivity extends AppCompatActivity {
 //    public TextView category;
 //    public TextView type;
 //    public TextView description;
+    public Button goBackButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +38,15 @@ public class DetailActivity extends AppCompatActivity {
 //        category = findViewById(R.id.category_detail);
 //        type = findViewById(R.id.type_detail);
 //        description = findViewById(R.id.description_detail);
+
+        goBackButton = findViewById(R.id.goBack);
+        goBackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
 
     }
 }

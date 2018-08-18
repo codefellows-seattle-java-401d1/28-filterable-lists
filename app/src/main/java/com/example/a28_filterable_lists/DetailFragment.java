@@ -29,13 +29,13 @@ public class DetailFragment extends Fragment{
 //        description = findViewById(R.id.description_detail);
 //
         View view = inflater.inflate(R.layout.activity_detail, container, false);
-        goBackButton = view.findViewById(R.id.goBack);
-        goBackButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                getActivity().finish();
-            }
-        });
+//        goBackButton = view.findViewById(R.id.goBack);
+//        goBackButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                getActivity().finish();
+//            }
+//        });
 
 
         return view;
