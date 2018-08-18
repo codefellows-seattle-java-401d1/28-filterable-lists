@@ -1,7 +1,10 @@
 package com.example.a28_filterable_lists;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.a28_filterable_lists.models.Fabrics;
@@ -11,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     public TextView name;
     public TextView category;
     public TextView type;
+    public Button detailButton;
 
 
     Fabrics[] fabrics = {
@@ -64,5 +68,14 @@ public class MainActivity extends AppCompatActivity {
         name = findViewById(R.id.name);
         category = findViewById(R.id.category);
         type = findViewById(R.id.type);
+        detailButton = findViewById(R.id.goToDetail);
+
+        detailButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, DetailActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
