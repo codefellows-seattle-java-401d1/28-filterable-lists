@@ -31,6 +31,8 @@ public class FriendListFragment extends Fragment {
 
         friends = FriendsData.get().friends();
 
+
+
         // Grab RecyclerView
         mRecyclerView = view.findViewById(R.id.list);
 

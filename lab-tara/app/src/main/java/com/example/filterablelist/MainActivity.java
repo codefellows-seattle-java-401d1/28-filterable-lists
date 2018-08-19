@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button goToFriendsList;
+    private Button seeMyFriends;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,9 +16,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Add reference to buttons
-         goToFriendsList = findViewById(R.id.goToFriendsList);
+         seeMyFriends = findViewById(R.id.seeMyFriends);
 
-        attachClickListener(goToFriendsList, FriendListActivity.class);
+        attachClickListener(seeMyFriends, FriendListActivity.class);
     }
 
     public void attachClickListener(Button button, final Class class_) {

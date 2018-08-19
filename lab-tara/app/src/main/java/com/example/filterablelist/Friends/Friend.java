@@ -1,7 +1,5 @@
 package com.example.filterablelist.Friends;
 
-import android.content.Intent;
-
 public class Friend {
     public String name;
     public String handle;

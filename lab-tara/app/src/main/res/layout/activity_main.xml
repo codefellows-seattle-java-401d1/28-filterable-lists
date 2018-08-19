@@ -25,7 +25,7 @@
         android:layout_height="wrap_content">
         <Button
             android:text="See My Friends"
-            android:id="@+id/goToFriendsList"
+            android:id="@+id/seeMyFriends"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>

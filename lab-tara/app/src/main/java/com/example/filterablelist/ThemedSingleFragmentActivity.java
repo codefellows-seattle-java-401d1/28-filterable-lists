@@ -20,7 +20,7 @@ public abstract class ThemedSingleFragmentActivity extends AppCompatActivity {
         Fragment fragment = fm.findFragmentById(R.id.container);
         if (fragment == null) {
             fm.beginTransaction()
-                    .add(R.id.container, new FriendsFragment())
+                    .add(R.id.container, createFragment())
                     .commit();
         }
 
