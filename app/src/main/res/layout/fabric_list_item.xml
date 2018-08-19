@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--In my original attempt at this project, I had this information written on the main activity because I wanted the list to display immediately; not have to push a button to enter.-->
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"

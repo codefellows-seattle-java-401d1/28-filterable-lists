@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--This is the same as when I wrote it following the videos. It is creating the default view for the fragment to fit into. The "container" in the middle is like the empty divs that we would dynamically fill using JS in 201 and 301.-->
+
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"

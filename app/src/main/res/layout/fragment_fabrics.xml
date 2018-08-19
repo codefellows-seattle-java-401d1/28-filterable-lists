@@ -1,9 +1,12 @@
+<!--This was the file that I called activity_detail when I was walking through with the videos.  Why does this one not need the "<?xml version="1.0" encoding="utf-8"?>" reference at the top of the page?-->
+
 <android.support.constraint.ConstraintLayout
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!--This "EditText" is from the demo code.-->
     <EditText
         android:id="@+id/search"
         android:hint="search filter"
