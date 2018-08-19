@@ -16,11 +16,11 @@ import com.example.a28_filterable_lists.fabrics.Fabrics;
 
 import java.util.List;
 
-public class StarfleetRosterFragment extends Fragment
+public class FabricsFragment extends Fragment
         implements TextWatcher {
     private EditText mSearch;
 
-    private List<Fabrics> starfleet;
+    private List<Fabrics> fabrics;
 
     private RecyclerView mRecyclerView;
     private RecyclerView.LayoutManager mLayoutManager;
@@ -40,14 +40,14 @@ public class StarfleetRosterFragment extends Fragment
         mSearch = view.findViewById(R.id.search);
         mSearch.addTextChangedListener(this);
 
-        starfleet = FabricData.get().users();
+        fabrics = FabricData.get().fabrics();
 
         mRecyclerView = view.findViewById(R.id.list);
 
         mLayoutManager = new LinearLayoutManager(getActivity());
         mRecyclerView.setLayoutManager(mLayoutManager);
 
-        mAdapter = new FabricsAdapter(starfleet);
+        mAdapter = new FabricsAdapter(fabrics);
         mRecyclerView.setAdapter(mAdapter);
 
         return view;

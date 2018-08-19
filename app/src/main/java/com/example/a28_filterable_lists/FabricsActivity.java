@@ -6,6 +6,6 @@ public class FabricsActivity extends ThemedSingleFragmentActivity {
 
     @Override
     public Fragment createFragment() {
-        return new StarfleetRosterFragment();
+        return new FabricsFragment();
     }
 }

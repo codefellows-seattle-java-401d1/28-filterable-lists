@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        goToFabricList = findViewById(R.id.goToStarfleetRoster);
+        goToFabricList = findViewById(R.id.goToFabricList);
 
         attachClickListener(goToFabricList, FabricsActivity.class);
     }
