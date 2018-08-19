@@ -9,7 +9,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.a28_filterable_lists.fabrics.Fabrics;
-//This Fragment is what holds the informatio
+//This Fragment is what holds the information to put into the "container" space that was created on the back activity template. It is essentially like filling in an empty div on HTML using JS like we did in 201 and 301.
+
+//I didn't get to this point on my own. This is logic from the demo code. But it follows the same logic from the FabricsFragment that I wrote.
 public class FabricsDetailFragment extends Fragment {
     TextView name;
     TextView category;
@@ -26,17 +28,17 @@ public class FabricsDetailFragment extends Fragment {
                 R.layout.activity_fabrics_detail,
                 container, false);
         Intent data = getActivity().getIntent();
-        Fabrics person = Fabrics.fromIntent(data);
+        Fabrics fabric = Fabrics.fromIntent(data);
 
         name = view.findViewById(R.id.detail_name);
         category = view.findViewById(R.id.detail_category);
         type = view.findViewById(R.id.detail_type);
         description = view.findViewById(R.id.detail_description);
 
-        name.setText(person.name);
-        category.setText(person.category);
-        type.setText(person.type);
-        description.setText(person.description);
+        name.setText(fabric.name);
+        category.setText(fabric.category);
+        type.setText(fabric.type);
+        description.setText(fabric.description);
 
         return view;
     }
