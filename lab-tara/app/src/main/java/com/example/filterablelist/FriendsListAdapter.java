@@ -1,5 +1,6 @@
 package com.example.filterablelist;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,7 +13,9 @@ import java.util.List;
 
 public class FriendsListAdapter extends RecyclerView.Adapter<FriendsListAdapter.ViewHolder> {
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        Friend mFriend;
+
         public View view;
         public TextView name;
         public TextView handle;
@@ -23,6 +26,15 @@ public class FriendsListAdapter extends RecyclerView.Adapter<FriendsListAdapter.
 
             this.name = view.findViewById(R.id.name);
             this.handle = view.findViewById(R.id.handle);
+            view.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View view) {
+            Intent intent = new Intent(view.getContext(), FriendsDetailActivity.class);
+            mFriend.fillIntent(intent);
+
+            view.getContext().startActivity(intent);
         }
     }
 
@@ -51,5 +63,6 @@ public class FriendsListAdapter extends RecyclerView.Adapter<FriendsListAdapter.
         Friend friend = friendsList.get(position);
         holder.name.setText(friend.name);
         holder.handle.setText(friend.handle);
+        holder.mFriend = friend;
     }
 }
