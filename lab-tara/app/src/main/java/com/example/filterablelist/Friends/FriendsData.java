@@ -27,4 +27,17 @@ public class FriendsData {
     public List<Friend> friends() {
         return friends;
     }
+
+    public static List<Friend> search(String filter) {
+        List<Friend> results = new ArrayList<>();
+
+        for (Friend friend : get().friends()) {
+            if (friend.name.toLowerCase().contains(filter)) {
+                results.add(friend);
+            } else if (friend.handle.toLowerCase().contains(filter)) {
+                results.add(friend);
+            }
+        }
+        return results;
+    }
 }
