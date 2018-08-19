@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.a28_filterable_lists.starfleet.StarfleetPersonnel;
+import com.example.a28_filterable_lists.starfleet.Fabrics;
 
 public class StarfleetPersonnelDetailFragment extends Fragment {
     TextView name;
@@ -25,7 +25,7 @@ public class StarfleetPersonnelDetailFragment extends Fragment {
                 R.layout.activity_starfleet_personnel_detail,
                 container, false);
         Intent data = getActivity().getIntent();
-        StarfleetPersonnel person = StarfleetPersonnel.fromIntent(data);
+        Fabrics person = Fabrics.fromIntent(data);
 
         name = view.findViewById(R.id.detail_name);
         rank = view.findViewById(R.id.detail_rank);

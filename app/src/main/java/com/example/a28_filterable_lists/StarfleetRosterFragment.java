@@ -11,8 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 
-import com.example.a28_filterable_lists.starfleet.StarfleetData;
-import com.example.a28_filterable_lists.starfleet.StarfleetPersonnel;
+import com.example.a28_filterable_lists.starfleet.FabricData;
+import com.example.a28_filterable_lists.starfleet.Fabrics;
 
 import java.util.List;
 
@@ -20,7 +20,7 @@ public class StarfleetRosterFragment extends Fragment
         implements TextWatcher {
     private EditText mSearch;
 
-    private List<StarfleetPersonnel> starfleet;
+    private List<Fabrics> starfleet;
 
     private RecyclerView mRecyclerView;
     private RecyclerView.LayoutManager mLayoutManager;
@@ -40,7 +40,7 @@ public class StarfleetRosterFragment extends Fragment
         mSearch = view.findViewById(R.id.search);
         mSearch.addTextChangedListener(this);
 
-        starfleet = StarfleetData.get().users();
+        starfleet = FabricData.get().users();
 
         mRecyclerView = view.findViewById(R.id.list);
 
@@ -61,7 +61,7 @@ public class StarfleetRosterFragment extends Fragment
     @Override
     public void onTextChanged(CharSequence s, int start, int before, int count) {
         String filter = s.toString().toLowerCase();
-        List<StarfleetPersonnel> filtered = StarfleetData.search(filter);
+        List<Fabrics> filtered = FabricData.search(filter);
 
         mAdapter = new StarfleetRosterAdapter(filtered);
         mRecyclerView.setAdapter(mAdapter);

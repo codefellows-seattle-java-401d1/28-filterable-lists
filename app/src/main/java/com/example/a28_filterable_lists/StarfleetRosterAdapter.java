@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.a28_filterable_lists.starfleet.StarfleetPersonnel;
+import com.example.a28_filterable_lists.starfleet.Fabrics;
 
 import java.util.List;
 
@@ -16,7 +16,7 @@ public class StarfleetRosterAdapter extends
 
     public static class ViewHolder extends RecyclerView.ViewHolder
             implements View.OnClickListener {
-        public StarfleetPersonnel mPerson;
+        public Fabrics mPerson;
 
         public View view;
         public TextView name;
@@ -40,9 +40,9 @@ public class StarfleetRosterAdapter extends
         }
     }
 
-    List<StarfleetPersonnel> personnelList;
+    List<Fabrics> personnelList;
 
-    public StarfleetRosterAdapter(List<StarfleetPersonnel> personnelList) {
+    public StarfleetRosterAdapter(List<Fabrics> personnelList) {
         this.personnelList = personnelList;
     }
 
@@ -64,7 +64,7 @@ public class StarfleetRosterAdapter extends
     // and use that item to modify the widgets in the view holder.
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        StarfleetPersonnel person = personnelList.get(position);
+        Fabrics person = personnelList.get(position);
         holder.name.setText(person.name);
         holder.rank.setText(person.rank);
         holder.mPerson = person;
