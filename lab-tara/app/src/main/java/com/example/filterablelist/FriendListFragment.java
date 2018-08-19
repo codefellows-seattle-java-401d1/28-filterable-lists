@@ -2,6 +2,7 @@ package com.example.filterablelist;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,6 +17,7 @@ public class FriendListFragment extends Fragment {
     private List<Friend> friends;
 
     private RecyclerView mRecyclerView;
+    private RecyclerView.LayoutManager mLayoutManager;
     private FriendsListAdapter mAdapter;
 
     @Override
@@ -31,15 +33,12 @@ public class FriendListFragment extends Fragment {
 
         friends = FriendsData.get().friends();
 
-
-
-        // Grab RecyclerView
         mRecyclerView = view.findViewById(R.id.list);
 
-        // Create Adapter
-        mAdapter = new FriendsListAdapter(friends);
+        mLayoutManager = new LinearLayoutManager(getActivity());
+        mRecyclerView.setLayoutManager(mLayoutManager);
 
-        // Set the RecyclerView with the Adapter
+        mAdapter = new FriendsListAdapter(friends);
         mRecyclerView.setAdapter(mAdapter);
 
         return view;
