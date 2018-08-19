@@ -24,7 +24,7 @@ public class RosterFragment extends Fragment
 
     private EditText mSearch;
 
-    private List<Constructor> starfleet;
+    private List<Constructor> hearthstone;
 
     private RecyclerView mRecyclerView;
     private RecyclerView.LayoutManager mLayoutManager;
@@ -44,14 +44,14 @@ public class RosterFragment extends Fragment
         mSearch = view.findViewById(R.id.search);
         mSearch.addTextChangedListener(this);
 
-        starfleet = Data.get().users();
+        hearthstone = Data.get().users();
 
         mRecyclerView = view.findViewById(R.id.list);
 
         mLayoutManager = new LinearLayoutManager(getActivity());
         mRecyclerView.setLayoutManager(mLayoutManager);
 
-        mAdapter = new RosterAdapter(starfleet);
+        mAdapter = new RosterAdapter(hearthstone);
         mRecyclerView.setAdapter(mAdapter);
 
         return view;

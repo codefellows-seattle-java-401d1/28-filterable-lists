@@ -42,15 +42,15 @@ public class RosterAdapter extends
         }
     }
 
-    List<Constructor> personnelList;
+    List<Constructor> cardList;
 
-    public RosterAdapter(List<Constructor> personnelList) {
-        this.personnelList = personnelList;
+    public RosterAdapter(List<Constructor> cardList) {
+        this.cardList = cardList;
     }
 
     @Override
     public int getItemCount() {
-        return this.personnelList.size();
+        return this.cardList.size();
     }
 
     @Override
@@ -64,7 +64,7 @@ public class RosterAdapter extends
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        Constructor person = personnelList.get(position);
+        Constructor person = cardList.get(position);
         holder.name.setText(person.name);
         holder.rank.setText(person.rank);
         holder.mPerson = person;
