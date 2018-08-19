@@ -8,12 +8,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.a28_filterable_lists.starfleet.Fabrics;
+import com.example.a28_filterable_lists.fabrics.Fabrics;
 
-public class StarfleetPersonnelDetailFragment extends Fragment {
+public class FabricsDetailFragment extends Fragment {
     TextView name;
-    TextView rank;
-    TextView bio;
+    TextView category;
+    TextView type;
+    TextView description;
 
     @Override
     public View onCreateView(
@@ -28,12 +29,14 @@ public class StarfleetPersonnelDetailFragment extends Fragment {
         Fabrics person = Fabrics.fromIntent(data);
 
         name = view.findViewById(R.id.detail_name);
-        rank = view.findViewById(R.id.detail_rank);
-        bio = view.findViewById(R.id.detail_bio);
+        category = view.findViewById(R.id.detail_category);
+        type = view.findViewById(R.id.detail_type);
+        description = view.findViewById(R.id.detail_description);
 
         name.setText(person.name);
-        rank.setText(person.rank);
-        bio.setText(person.bio);
+        category.setText(person.category);
+        type.setText(person.type);
+        description.setText(person.description);
 
         return view;
     }

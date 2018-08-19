@@ -1,4 +1,4 @@
-package com.example.a28_filterable_lists.starfleet;
+package com.example.a28_filterable_lists.fabrics;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -8,18 +8,16 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button buttonGoToTwo;
-    Button buttonGoToThree;
-    Button goToStarfleetRoster;
+    Button goToFabricList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        goToStarfleetRoster = findViewById(R.id.goToStarfleetRoster);
+        goToFabricList = findViewById(R.id.goToStarfleetRoster);
 
-        attachClickListener(goToStarfleetRoster, StarfleetRosterActivity.class);
+        attachClickListener(goToFabricList, FabricsActivity.class);
     }
 
     public void attachClickListener(Button button, final Class class_) {

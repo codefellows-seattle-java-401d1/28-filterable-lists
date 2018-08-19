@@ -22,8 +22,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:text="Starfleet Roster"
-            android:id="@+id/goToStarfleetRoster"
+            android:text="Fabric List"
+            android:id="@+id/goToFabricList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>

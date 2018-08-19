@@ -2,7 +2,7 @@ package com.example.a28_filterable_lists;
 
 import android.support.v4.app.Fragment;
 
-public class StarfleetRosterActivity extends ThemedSingleFragmentActivity {
+public class FabricsActivity extends ThemedSingleFragmentActivity {
 
     @Override
     public Fragment createFragment() {

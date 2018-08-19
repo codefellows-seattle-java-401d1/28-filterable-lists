@@ -11,8 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 
-import com.example.a28_filterable_lists.starfleet.FabricData;
-import com.example.a28_filterable_lists.starfleet.Fabrics;
+import com.example.a28_filterable_lists.fabrics.FabricData;
+import com.example.a28_filterable_lists.fabrics.Fabrics;
 
 import java.util.List;
 
@@ -24,7 +24,7 @@ public class StarfleetRosterFragment extends Fragment
 
     private RecyclerView mRecyclerView;
     private RecyclerView.LayoutManager mLayoutManager;
-    private StarfleetRosterAdapter mAdapter;
+    private FabricsAdapter mAdapter;
 
     @Override
     public View onCreateView(
@@ -47,7 +47,7 @@ public class StarfleetRosterFragment extends Fragment
         mLayoutManager = new LinearLayoutManager(getActivity());
         mRecyclerView.setLayoutManager(mLayoutManager);
 
-        mAdapter = new StarfleetRosterAdapter(starfleet);
+        mAdapter = new FabricsAdapter(starfleet);
         mRecyclerView.setAdapter(mAdapter);
 
         return view;
@@ -63,7 +63,7 @@ public class StarfleetRosterFragment extends Fragment
         String filter = s.toString().toLowerCase();
         List<Fabrics> filtered = FabricData.search(filter);
 
-        mAdapter = new StarfleetRosterAdapter(filtered);
+        mAdapter = new FabricsAdapter(filtered);
         mRecyclerView.setAdapter(mAdapter);
     }
 
