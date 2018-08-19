@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FriendsData {
-    private static FriendsData mData;
+    private static FriendsData mSingleton;
     private List<Friend> friends;
 
     // Make the default constructor private so no one else can make one
@@ -18,9 +18,13 @@ public class FriendsData {
     }
 
     public static FriendsData get() {
-        if (mData == null) {
-            mData = new FriendsData();
+        if (mSingleton == null) {
+            mSingleton = new FriendsData();
         }
-        return mData;
+        return mSingleton;
+    }
+
+    public List<Friend> friends() {
+        return friends;
     }
 }

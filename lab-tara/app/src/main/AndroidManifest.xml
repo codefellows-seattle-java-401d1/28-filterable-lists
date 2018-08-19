@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".FriendsActivity" />
         <activity android:name=".FriendsDetailActivity" />
-        <activity android:name=".activity_back_activity"></activity>
+        <activity android:name=".activity_back_activity" />
+        <activity android:name=".FriendsList"></activity>
     </application>
 
 </manifest>

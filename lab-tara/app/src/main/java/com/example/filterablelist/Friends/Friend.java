@@ -13,17 +13,17 @@ public class Friend {
         this.bio = bio;
     }
 
-    public void fillIntent(Intent intent) {
-        intent.putExtra("name", this.name);
-        intent.putExtra("handle", this.handle);
-        intent.putExtra("bio", this.bio);
-    }
-
-    public static Friend fromIntent(Intent data) {
-        return new Friend(
-          data.getStringExtra("name"),
-          data.getStringExtra("handle"),
-          data.getStringExtra("bio")
-        );
-    }
+//    public void fillIntent(Intent intent) {
+//        intent.putExtra("name", this.name);
+//        intent.putExtra("handle", this.handle);
+//        intent.putExtra("bio", this.bio);
+//    }
+//
+//    public static Friend fromIntent(Intent data) {
+//        return new Friend(
+//          data.getStringExtra("name"),
+//          data.getStringExtra("handle"),
+//          data.getStringExtra("bio")
+//        );
+//    }
 }
