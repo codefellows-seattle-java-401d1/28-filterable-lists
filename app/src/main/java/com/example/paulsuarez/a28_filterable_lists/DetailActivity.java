@@ -1,4 +1,10 @@
 package com.example.paulsuarez.a28_filterable_lists;
 
-public class DetailActivity {
+import android.support.v4.app.Fragment;
+
+public class DetailActivity extends RosterActivity{
+
+    public Fragment createFragment() {
+        return new DetailFragment();
+    }
 }
