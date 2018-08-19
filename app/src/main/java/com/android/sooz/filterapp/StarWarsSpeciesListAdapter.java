@@ -13,45 +13,45 @@ import java.util.List;
 
 public class StarWarsSpeciesListAdapter extends RecyclerView.Adapter<StarWarsSpeciesListAdapter.ViewHolder> {
 
-        public static class ViewHolder extends RecyclerView.ViewHolder
-                implements View.OnClickListener{
-            public StarWarsSpecies mAlien;
+    public class ViewHolder extends RecyclerView.ViewHolder
+            implements View.OnClickListener {
 
-            public View view;
-            public TextView name;
-            public TextView classification;
+        public StarWarsSpecies mAlien;
 
-            public ViewHolder(View view) {
-                super(view);
-                this.view = view;
+        public View view;
+        public TextView name;
+        public TextView classification;
 
-                this.name = view.findViewById(R.id.name);
-                this.classification = view.findViewById(R.id.classification);
+        public ViewHolder(View view) {
+            super(view);
+            this.view = view;
 
-                view.setOnClickListener(this);
-            }
+            this.name = view.findViewById(R.id.name);
+            this.classification = view.findViewById(R.id.classficiation);
 
-            @Override
-            public void onClick (View v) {
-                Intent intent = new Intent(v.getContext(), SpeciesDetailActivity.class);
-                mAlien.fillIntent(intent);
-
-                v.getContext().startActivity(intent);
-            }
-
-            List<StarWarsSpecies> speciesList;
-
-            public void  StarWarsSpeciesListAdapter(List<StarWarsSpecies> speciesList) {
-            this.speciesList = speciesList;
+            view.setOnClickListener(this);
         }
 
         @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(v.getContext(), SpeciesDetailActivity.class);
+            mAlien.fillIntent(intent);
+
+            v.getContext().startActivity(intent);
+        }
+
+        List<StarWarsSpecies> speciesList;
+
+        public void StarWarsSpeciesListAdapter(List<StarWarsSpecies> speciesList) {
+            this.speciesList = speciesList;
+        }
+
         public int getItemCount() {
             return this.speciesList.size();
         }
 
         @Override
-        public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
+        public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             LayoutInflater inflater = LayoutInflater.from(parent.getContext());
             View view = inflater.inflate(R.layout.species_list_item, parent, false);
 
@@ -62,8 +62,9 @@ public class StarWarsSpeciesListAdapter extends RecyclerView.Adapter<StarWarsSpe
 
         //Find alien associated with the position in the list chosen
         // and use that alien's properties to modify the widgest in the view holder
+
         @Override
-        public void onBindViewHolder (ViewHolder holder, int position){
+        public void onBindViewHolder(ViewHolder holder, int position) {
             StarWarsSpecies alien = speciesList.get(position);
 
             holder.name.setText(alien.name);
@@ -71,6 +72,7 @@ public class StarWarsSpeciesListAdapter extends RecyclerView.Adapter<StarWarsSpe
 
             holder.mAlien = alien;
         }
-
     }
 }
+
+

@@ -9,6 +9,7 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Adapter;
 import android.widget.EditText;
 
 import com.android.sooz.filterapp.models.SpeciesData;
@@ -17,12 +18,13 @@ import com.android.sooz.filterapp.models.StarWarsSpecies;
 import java.util.List;
 
 public class StarWarsSpeciesListFragment extends Fragment implements TextWatcher {
+
     private EditText mSearch;
 
     private List<StarWarsSpecies> starwars;
 
-    private RecyclerView mRecylcerView;
-    private RecyclerView.LayoutManager mlayoutManager;
+    private RecyclerView mRecyclerView;
+    private RecyclerView.LayoutManager mLayoutManager;
     private StarWarsSpeciesListAdapter mAdapter;
 
     @Override
@@ -38,13 +40,13 @@ public class StarWarsSpeciesListFragment extends Fragment implements TextWatcher
 
         starwars = SpeciesData.get().species();
 
-        mRecylcerView = view.findViewById(R.id.list);
+        mRecyclerView = view.findViewById(R.id.list);
 
-        mlayoutManager = new LinearLayoutManager(getActivity());
-        mRecylcerView.setLayoutManager(mlayoutManager);
+        mLayoutManager = new LinearLayoutManager(getActivity());
+        mRecyclerView.setLayoutManager(mLayoutManager);
 
-        mAdapter = new StarWarsSpeciesListAdapter(starwars);
-        mRecylcerView.setAdapter(mAdapter);
+        mAdapter = new StarWarsSpeciesListAdapter();
+        mRecyclerView.setAdapter(mAdapter);
 
         return view;
     }
@@ -59,8 +61,8 @@ public class StarWarsSpeciesListFragment extends Fragment implements TextWatcher
         String filter = s.toString().toLowerCase();
         List<StarWarsSpecies> filtered = SpeciesData.search(filter);
 
-        mAdapter = new StarWarsSpeciesListAdapter(filtered);
-        mRecylcerView.setAdapter(mAdapter);
+//        mAdapter = new Adapter();
+        mRecyclerView.setAdapter(mAdapter);
     }
 
     @Override

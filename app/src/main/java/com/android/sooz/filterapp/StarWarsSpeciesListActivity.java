@@ -7,13 +7,11 @@ import android.os.Bundle;
 public class StarWarsSpeciesListActivity extends ThemeHeaderFragmentActivity {
 
     @Override
-    public int getheaderDrawableID() {
-
-        return R.drawable.starwarsbanner1;
+    public int getHeaderDrawableID() {
+        return super.getHeaderDrawableID();
     }
 
     @Override
-
     public Fragment createFragment(){
         return new StarWarsSpeciesListFragment();
     }

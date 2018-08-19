@@ -48,5 +48,3 @@ public abstract class ThemeHeaderFragmentActivity extends AppCompatActivity {
     public abstract Fragment createFragment();
 }
 
-
-
