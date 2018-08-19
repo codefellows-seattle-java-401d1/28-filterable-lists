@@ -1,22 +1,10 @@
 package com.example.filterablelist;
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.Button;
+import android.support.v4.app.Fragment;
 
-public class FriendsDetailActivity extends AppCompatActivity {
+public class FriendsDetailActivity extends ThemedSingleFragmentActivity {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_friends_detail);
-
-        Button goBack = findViewById(R.id.goBack);
-        goBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
+    public Fragment createFragment() {
+        return new FriendsDetailFragment();
     }
 }
