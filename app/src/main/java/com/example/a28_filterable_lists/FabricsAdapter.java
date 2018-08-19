@@ -56,7 +56,7 @@ public class FabricsAdapter extends
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View view = inflater.inflate(R.layout.starfleet_roster_list_item, parent, false);
+        View view = inflater.inflate(R.layout.fabric_list_item, parent, false);
 
         ViewHolder holder = new ViewHolder(view);
         return holder;

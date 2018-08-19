@@ -23,7 +23,7 @@ public class FabricsDetailFragment extends Fragment {
             Bundle savedInstanceState
     ) {
         View view = inflater.inflate(
-                R.layout.activity_starfleet_personnel_detail,
+                R.layout.activity_fabrics_detail,
                 container, false);
         Intent data = getActivity().getIntent();
         Fabrics person = Fabrics.fromIntent(data);

@@ -33,7 +33,7 @@ public class FabricsFragment extends Fragment
             Bundle savedInstanceState
     ) {
         View view = inflater.inflate(
-                R.layout.fragment_starfleet_roster,
+                R.layout.fragment_fabrics,
                 container, false
         );
 
