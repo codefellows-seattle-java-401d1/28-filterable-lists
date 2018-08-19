@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">28-filterable-lists</string>
+    <string name="app_name">Filterable Lists</string>
+    <string name="go_back">Go Back</string>
+    <string name="placeholder">placeholder</string>
 </resources>
