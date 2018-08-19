@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".StarWarsSpeciesListActivity"></activity>
+        <activity android:name=".SpeciesDetailActivity"></activity>
+        <activity android:name=".ThemeHeaderFragmentActivity"></activity>
     </application>
 
 </manifest>

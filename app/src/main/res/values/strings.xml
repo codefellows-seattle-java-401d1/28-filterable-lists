@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">FilterApp</string>
+    <string name="return_to_main_list">return to main list</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome to the Star Wars Species Application. \n\n\nLearn more about your favorite Star Wars species.</string>
 </resources>
