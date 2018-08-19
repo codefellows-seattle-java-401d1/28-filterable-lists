@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.a28_filterable_lists.fabrics.Fabrics;
-
+//This Fragment is what holds the informatio
 public class FabricsDetailFragment extends Fragment {
     TextView name;
     TextView category;
