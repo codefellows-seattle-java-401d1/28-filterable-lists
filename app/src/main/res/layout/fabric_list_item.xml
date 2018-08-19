@@ -1,43 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--In my original attempt at this project, I had this information written on the main activity because I wanted the list to display immediately; not have to push a button to enter.-->
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="10sp">
+    android:padding="8sp"
+    android:background="@drawable/customborder">
 
     <TextView
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="name"
         android:textSize="40sp"
         android:textStyle="bold" />
 
     <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingTop="5sp">
+        android:paddingBottom="5sp">
+        <TextView
+            android:id="@+id/category"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@+id/category"
-        android:layout_width="0sp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="category"
-        android:textAlignment="textStart"
-        android:textSize="25sp" />
-
-    <TextView
-        android:id="@+id/type"
-        android:layout_width="0sp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_weight="1"
-        android:text="type"
-        android:textAlignment="textEnd"
-        android:textSize="25sp" />
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:textSize="20sp" />
     </LinearLayout>
 
 </LinearLayout>
