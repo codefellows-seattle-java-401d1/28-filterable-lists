@@ -41,4 +41,8 @@ __Resources__
 
 - Confirmation of color-blindness accessability per [WCAG 2.0](http://www.w3.org/TR/WCAG20/) standards thanks to [WebAIM](https://webaim.org/resources/contrastchecker/) resources
 
+- Below resource didn't fix problem, but leaving it in, in case I understand this better later
+
+- Troubleshooting adapater file issues with help from [Willow Tree Apps](https://willowtreeapps.com/ideas/android-fundamentals-working-with-the-recyclerview-adapter-and-viewholder-pattern/)
+
 All images and references related to Star Wars are Copyright protected and property of the Walt Disney Corporation.

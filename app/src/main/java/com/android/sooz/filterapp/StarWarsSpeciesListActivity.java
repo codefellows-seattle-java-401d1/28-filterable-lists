@@ -6,9 +6,9 @@ import android.os.Bundle;
 
 public class StarWarsSpeciesListActivity extends ThemeHeaderFragmentActivity {
 
-    @Override
     public int getHeaderDrawableID() {
-        return super.getHeaderDrawableID();
+
+        return R.drawable.starwarsbanner1;
     }
 
     @Override
