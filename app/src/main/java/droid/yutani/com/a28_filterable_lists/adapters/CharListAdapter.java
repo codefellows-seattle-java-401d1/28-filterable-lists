@@ -1,5 +1,6 @@
 package droid.yutani.com.a28_filterable_lists.adapters;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,11 +10,14 @@ import android.widget.TextView;
 import java.util.List;
 
 import droid.yutani.com.a28_filterable_lists.R;
+import droid.yutani.com.a28_filterable_lists.activities.CharDetail;
 import droid.yutani.com.a28_filterable_lists.model.BebopCharacter;
 
 public class CharListAdapter extends RecyclerView.Adapter<CharListAdapter.ViewHolder> {
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        public BebopCharacter mCharacter;
+
         public View view;
         public TextView name;
         public TextView job;
@@ -23,6 +27,14 @@ public class CharListAdapter extends RecyclerView.Adapter<CharListAdapter.ViewHo
             this.view = view;
             this.name = view.findViewById(R.id.name);
             this.job = view.findViewById(R.id.job);
+        }
+
+        @Override
+        public void onClick(View view) {
+            Intent intent = new Intent(view.getContext(), CharDetail.class);
+            mCharacter.fillIntent(intent);
+
+            view.getContext().startActivity(intent);
         }
     }
 
