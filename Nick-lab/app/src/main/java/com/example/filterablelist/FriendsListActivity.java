@@ -2,9 +2,9 @@ package com.example.filterablelist;
 
 import android.support.v4.app.Fragment;
 
-public class FriendsActivity extends ThemedSingleFragmentActivity {
+public class FriendsListActivity extends ThemedSingleFragmentActivity {
     @Override
     public Fragment createFragment() {
-        return new Friends_Activity_Fragment();
+        return new FriendsListFragment();
     }
 }

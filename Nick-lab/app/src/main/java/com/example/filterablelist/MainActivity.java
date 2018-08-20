@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         // This sets the reference to the view and the button
         buttonGoToFriendActivity = findViewById(R.id.seeFriendsButton);
 
-        attachClickListener(buttonGoToFriendActivity, FriendsActivity.class);
+        attachClickListener(buttonGoToFriendActivity, FriendsListActivity.class);
     }
 
     public void attachClickListener(Button button, final Class class_) {

@@ -16,7 +16,7 @@ import com.example.filterablelist.models.FriendsData;
 
 import java.util.List;
 
-public class Friend_Detail_Activity_Fragment extends Fragment implements TextWatcher {
+public class FriendsListFragment extends Fragment implements TextWatcher {
 
     private EditText mSearch;
 
@@ -32,29 +32,29 @@ public class Friend_Detail_Activity_Fragment extends Fragment implements TextWat
             ViewGroup container,
             Bundle savedInstanceState
     ) {
-        View view = inflater.inflate(R.layout.activity_friend_detail,
+        View view = inflater.inflate(R.layout.friends_list_fragment,
                 container,
                 false
         );
 
-    mSearch = view.findViewById(R.id.search);
-    mSearch.addTextChangedListener(this);
+        mSearch = view.findViewById(R.id.search);
+        mSearch.addTextChangedListener(this);
 
-    friends = FriendsData.get().friends();
+        friends = FriendsData.get().friends();
 
-    mRecyclerView = view.findViewById(R.id.list);
+        mRecyclerView = view.findViewById(R.id.list);
 
-    mLayoutManager = new LinearLayoutManager(getActivity());
-    mRecyclerView.setLayoutManager(mLayoutManager);
+        mLayoutManager = new LinearLayoutManager(getActivity());
+        mRecyclerView.setLayoutManager(mLayoutManager);
 
-    mAdapter = new FriendsListAdapter(friends);
-    mRecyclerView.setAdapter(mAdapter);
+        mAdapter = new FriendsListAdapter(friends);
+        mRecyclerView.setAdapter(mAdapter);
 
-    return view;
-}
+        return view;
+    }
 
-@Override
-public void beforeTextChanged(CharSequence charSequence, int i, int j, int k) {
+    @Override
+    public void beforeTextChanged(CharSequence charSequence, int i, int j, int k) {
         //Does nothing
     }
 

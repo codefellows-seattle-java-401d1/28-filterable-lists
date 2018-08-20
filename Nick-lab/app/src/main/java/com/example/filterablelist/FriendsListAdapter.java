@@ -32,7 +32,7 @@ public class FriendsListAdapter extends RecyclerView.Adapter<FriendsListAdapter.
 
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(view.getContext(), Friends_Activity_Fragment.class);
+            Intent intent = new Intent(view.getContext(), FriendsListFragment.class);
             mFriend.fillIntent(intent);
 
             view.getContext().startActivity(intent);
@@ -53,7 +53,7 @@ public class FriendsListAdapter extends RecyclerView.Adapter<FriendsListAdapter.
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View view = inflater.inflate(R.layout.activity_friend_detail, parent, false);
+        View view = inflater.inflate(R.layout.friends_list_item, parent, false);
         ViewHolder holder = new ViewHolder(view);
 
         return holder;
