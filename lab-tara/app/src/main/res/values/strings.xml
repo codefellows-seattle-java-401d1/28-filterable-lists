@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Most Popular Twitter Accounts</string>
+    <string name="main_button">Let\'s find out!</string>
+    <string name="main_intro_text">Who has the most followers on twitter?</string>
+</resources>
