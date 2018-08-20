@@ -20,14 +20,13 @@ public class MainActivity extends AppCompatActivity {
 
         attachClickListener(buttonForTwo, SecondActivity.class);
         attachClickListener(buttonForThree, ThirdActivity.class);
-
     }
 
-    private void attachClickListener(Button button, final Class classto) {
+    private void attachClickListener(Button button, final Class classTo) {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, classto);
+                Intent intent = new Intent(MainActivity.this, classTo);
                 startActivity(intent);
             }
         });
