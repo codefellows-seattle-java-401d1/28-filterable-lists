@@ -45,7 +45,7 @@ public class StarWarsSpeciesListFragment extends Fragment implements TextWatcher
         mLayoutManager = new LinearLayoutManager(getActivity());
         mRecyclerView.setLayoutManager(mLayoutManager);
 
-        mAdapter = new StarWarsSpeciesListAdapter();
+        mAdapter = new StarWarsSpeciesListAdapter(starwars);
         mRecyclerView.setAdapter(mAdapter);
 
         return view;
@@ -61,7 +61,7 @@ public class StarWarsSpeciesListFragment extends Fragment implements TextWatcher
         String filter = s.toString().toLowerCase();
         List<StarWarsSpecies> filtered = SpeciesData.search(filter);
 
-//        mAdapter = new Adapter();
+        mAdapter = new StarWarsSpeciesListAdapter(filtered);
         mRecyclerView.setAdapter(mAdapter);
     }
 
