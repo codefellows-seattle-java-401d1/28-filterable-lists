@@ -8,7 +8,7 @@ import android.view.View;
 
 import droid.yutani.com.a28_filterable_lists.fragments.SecondFragment;
 
-public class SecondActivity extends AppCompatActivity {
+public class CharList extends AppCompatActivity {
     public void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_frag_template);

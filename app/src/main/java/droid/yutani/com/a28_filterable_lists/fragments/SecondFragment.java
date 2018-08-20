@@ -15,8 +15,7 @@ public class SecondFragment extends Fragment {
             ViewGroup container,
             Bundle savedInstanceState
     ) {
-        View view = inflater.inflate(R.layout.activity_second, container, false);
-
+        View view = inflater.inflate(R.layout.activity_list, container, false);
         return view;
     }
 }

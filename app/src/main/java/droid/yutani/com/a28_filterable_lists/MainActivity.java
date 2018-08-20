@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         mGoTo2 = findViewById(R.id.go_to_two);
         mGoTo3 = findViewById(R.id.go_to_three);
 
-        clickListener(mGoTo2, SecondActivity.class);
-        clickListener(mGoTo3, ThirdActivity.class);
+        clickListener(mGoTo2, CharList.class);
+        clickListener(mGoTo3, CharDetail.class);
     }
 
     public void clickListener (Button button, final Class toggleClass) {
