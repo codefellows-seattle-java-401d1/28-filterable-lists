@@ -5,25 +5,27 @@ This application is to show the power of filterable lists, using RecyclerView, A
 
 This app shows a list of Star Wars alien species and can be searched by species name as well as classification.
 
-##Current list of errors when compiling to launch app
-
-**all on my ListAdapter file**
-
-- error: StarWarsSpeciesListAdapter is not abstract and does not override abstract method getItemCount() in Adapter	
-- error: method does not override or implement a method from a supertype	
-- error: incompatible types: String cannot be converted to ViewGroup	
-- error: method does not override or implement a method from a supertype	
-- error: method does not override or implement a method from a supertype	
-
 ##Screenshots
-
-**CURRENTLY NOT AVAILBLE DUE TO INABILITY TO RUN APPLICATION**
-
 
 **Internal Editor View**
 
+![Intro Screen](/Users/sooz/codefellows/401Java/Labs/28-filterable-lists/screenshots/introscreenshot_speciesapp.png)
+
+![List View](/Users/sooz/codefellows/401Java/Labs/28-filterable-lists/screenshots/specieslistview.png)
+
+![Search View](/Users/sooz/codefellows/401Java/Labs/28-filterable-lists/screenshots/specieslist_filter_type_mammal.png)
+
+![Detail View](/Users/sooz/codefellows/401Java/Labs/28-filterable-lists/screenshots/speciesapp_detailview.jpg)
 
 **External View**
+
+[Intro Screen](https://github.com/FavoredFortune/28-filterable-lists/blob/master/screenshots/introscreenshot_speciesapp.png)
+
+[List View](https://github.com/FavoredFortune/28-filterable-lists/blob/master/screenshots/screenshots/specieslistview.png)
+
+[Search View](https://github.com/FavoredFortune/28-filterable-lists/blob/master/screenshots/specieslist_filter_type_mammal.png)
+
+[Detail View](https://github.com/FavoredFortune/28-filterable-lists/blob/master/screenshots/speciesapp_detailview.jpg)
 
 
 ##Credits/Resources
