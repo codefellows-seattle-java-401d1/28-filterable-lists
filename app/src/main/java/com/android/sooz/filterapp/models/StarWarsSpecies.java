@@ -29,8 +29,8 @@ public class StarWarsSpecies {
     public static StarWarsSpecies fromIntent(Intent data){
        return new StarWarsSpecies(
                data.getStringExtra("name"),
-               data.getStringExtra("bio"),
                data.getStringExtra("classification"),
+               data.getStringExtra("language"),
                data.getStringExtra("homeworld")
        );
     }

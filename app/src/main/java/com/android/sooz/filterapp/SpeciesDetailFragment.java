@@ -12,7 +12,7 @@ import com.android.sooz.filterapp.models.StarWarsSpecies;
 
 import org.w3c.dom.Text;
 
-public class SpeciesDetailFragment extends Fragment {
+public class SpeciesDetailFragment extends StarWarsSpeciesListFragment {
     TextView name;
     TextView classification;
     TextView language;
