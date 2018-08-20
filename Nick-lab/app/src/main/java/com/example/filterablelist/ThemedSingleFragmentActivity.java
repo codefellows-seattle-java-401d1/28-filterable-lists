@@ -31,5 +31,6 @@ public abstract class ThemedSingleFragmentActivity extends AppCompatActivity{
             }
         });
     }
+    
     public abstract Fragment createFragment();
 }

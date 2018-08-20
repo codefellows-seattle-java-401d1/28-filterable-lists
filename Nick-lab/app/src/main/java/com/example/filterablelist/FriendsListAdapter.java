@@ -19,14 +19,14 @@ public class FriendsListAdapter extends RecyclerView.Adapter<FriendsListAdapter.
 
         public View view;
         public TextView name;
-        public TextView bio;
+        public TextView age;
 
         public ViewHolder(View view) {
             super(view);
             this.view = view;
 
             this.name = view.findViewById(R.id.name);
-            this.bio = view.findViewById(R.id.bio);
+            this.age = view.findViewById(R.id.age);
             view.setOnClickListener(this);
         }
 
@@ -63,7 +63,7 @@ public class FriendsListAdapter extends RecyclerView.Adapter<FriendsListAdapter.
     public void onBindViewHolder(ViewHolder holder, int position) {
         Friend friend = friendsList.get(position);
         holder.name.setText(friend.name);
-        holder.bio.setText(friend.bio);
+        holder.age.setText(friend.age);
         holder.mFriend = friend;
     }
 }

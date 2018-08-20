@@ -32,7 +32,7 @@ public class Friend_Detail_Activity_Fragment extends Fragment implements TextWat
             ViewGroup container,
             Bundle savedInstanceState
     ) {
-        View view = inflater.inflate(R.layout.friends_activity_fragment,
+        View view = inflater.inflate(R.layout.activity_friend_detail,
                 container,
                 false
         );
@@ -69,7 +69,5 @@ public void beforeTextChanged(CharSequence charSequence, int i, int j, int k) {
 
     @Override
     public void afterTextChanged(Editable editable) {
-
     }
-
 }

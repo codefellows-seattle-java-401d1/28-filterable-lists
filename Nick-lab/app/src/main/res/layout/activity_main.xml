@@ -27,7 +27,7 @@
         android:layout_height="wrap_content">
         <Button
             android:text="Take a peek!"
-            android:id="@+id/seeFriends"
+            android:id="@+id/seeFriendsButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>
