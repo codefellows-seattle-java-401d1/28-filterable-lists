@@ -17,7 +17,7 @@
     </android.support.constraint.ConstraintLayout>
 
     <Button
-        android:text="Back to Main"
+        android:text="Back"
         android:id="@+id/goBack"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

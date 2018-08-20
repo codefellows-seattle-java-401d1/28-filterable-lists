@@ -14,9 +14,10 @@
         android:layout_height="wrap_content" />
     <TextView
         android:id="@+id/detail_handle"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp"/>
     <TextView
         android:id="@+id/detail_bio"
         android:textSize="20sp"

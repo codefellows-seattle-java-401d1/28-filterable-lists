@@ -23,7 +23,7 @@ public class FriendsData {
         }
         return mSingleton;
     }
-
+.
     public List<Friend> friends() {
         return friends;
     }

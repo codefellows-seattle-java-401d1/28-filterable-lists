@@ -10,7 +10,7 @@
         android:id="@+id/introText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Use this app to find out a little more about my friends."
+        android:text="@string/main_intro_text"
         android:textSize="30sp"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:text="See My Friends"
+            android:text="@string/main_button"
             android:id="@+id/seeMyFriends"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
