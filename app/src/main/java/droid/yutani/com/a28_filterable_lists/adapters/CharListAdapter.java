@@ -27,6 +27,8 @@ public class CharListAdapter extends RecyclerView.Adapter<CharListAdapter.ViewHo
             this.view = view;
             this.name = view.findViewById(R.id.name);
             this.job = view.findViewById(R.id.job);
+
+            view.setOnClickListener(this);
         }
 
         @Override
@@ -58,6 +60,8 @@ public class CharListAdapter extends RecyclerView.Adapter<CharListAdapter.ViewHo
         BebopCharacter character = characterList.get(i);
         vh.name.setText(character.name);
         vh.job.setText(character.job);
+
+        vh.mCharacter = character;
     }
 
     @Override
