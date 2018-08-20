@@ -1,4 +1,4 @@
-package droid.yutani.com.a28_filterable_lists;
+package droid.yutani.com.a28_filterable_lists.activities;
 
 import android.support.v4.app.Fragment;
 
