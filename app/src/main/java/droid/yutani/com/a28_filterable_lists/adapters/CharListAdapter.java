@@ -37,7 +37,7 @@ public class CharListAdapter extends RecyclerView.Adapter<CharListAdapter.ViewHo
         LayoutInflater inflater = LayoutInflater.from(viewGroup.getContext());
         View view = inflater.inflate(R.layout.character_list_item, viewGroup, false);
 
-        ViewHolder vh = new ViewHolder(viewGroup);
+        ViewHolder vh = new ViewHolder(view);
         return vh;
     }
 
