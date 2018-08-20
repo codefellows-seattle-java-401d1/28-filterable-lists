@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Filterable Lists</string>
+    <string name="go_back">Go Back</string>
+    <string name="placeholder">placeholder</string>
+    <string name="see_the_characters">See the characters</string>
+    <string name="cowboy_bebop_characters">Cowboy Bebop Characters</string>
+</resources>
