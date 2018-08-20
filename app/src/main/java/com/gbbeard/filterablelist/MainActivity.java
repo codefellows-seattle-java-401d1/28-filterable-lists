@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+
     Button buttonForTwo;
     Button buttonForThree;
 
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         attachClickListener(buttonForThree, ThirdActivity.class);
     }
 
-    private void attachClickListener(Button button, final Class classTo) {
+    public void attachClickListener(Button button, final Class classTo) {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
