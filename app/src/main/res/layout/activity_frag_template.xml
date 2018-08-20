@@ -5,11 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/header"
+        android:src="@drawable/header"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <android.support.constraint.ConstraintLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header"
         app:layout_constraintBottom_toTopOf="@id/go_back_btn">
 
     </android.support.constraint.ConstraintLayout>

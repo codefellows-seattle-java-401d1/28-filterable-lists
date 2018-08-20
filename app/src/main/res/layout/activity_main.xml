@@ -9,32 +9,33 @@
 
     <TextView
         android:id="@+id/main_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome"
-        app:layout_constraintBottom_toTopOf="@+id/button_group"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <LinearLayout
-        android:id="@+id/button_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/go_to_list"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/cowboy_bebop_characters"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+
+    <Button
+        android:id="@+id/go_to_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/main_text"
-        app:layout_constraintBottom_toBottomOf="parent">
-        <Button
-            android:id="@+id/go_to_two"
-            android:layout_weight="1"
-            android:layout_width="0sp"
-            android:layout_height="wrap_content"
-            android:text="Go to two"/>
-        <Button
-            android:id="@+id/go_to_three"
-            android:layout_weight="1"
-            android:layout_width="0sp"
-            android:layout_height="wrap_content"
-            android:text="Go to three"/>
-    </LinearLayout>
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/see_the_characters" />
+
+    <Button
+        android:id="@+id/go_to_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/go_to_list"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Go to Detail View" />
+
 
 </android.support.constraint.ConstraintLayout>

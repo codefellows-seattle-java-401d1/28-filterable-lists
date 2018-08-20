@@ -7,19 +7,19 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button mGoTo2;
-    private Button mGoTo3;
+    private Button mGoToList;
+    private Button mGoToDetail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mGoTo2 = findViewById(R.id.go_to_two);
-        mGoTo3 = findViewById(R.id.go_to_three);
+        mGoToList = findViewById(R.id.go_to_list);
+        mGoToDetail = findViewById(R.id.go_to_detail);
 
-        clickListener(mGoTo2, CharList.class);
-        clickListener(mGoTo3, CharDetail.class);
+        clickListener(mGoToList, CharList.class);
+        clickListener(mGoToDetail, CharDetail.class);
     }
 
     public void clickListener (Button button, final Class toggleClass) {

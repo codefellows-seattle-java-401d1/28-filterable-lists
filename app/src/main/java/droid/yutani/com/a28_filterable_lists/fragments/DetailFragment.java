@@ -8,14 +8,14 @@ import android.view.ViewGroup;
 
 import droid.yutani.com.a28_filterable_lists.R;
 
-public class SecondFragment extends Fragment {
+public class DetailFragment extends Fragment {
     @Override
     public View onCreateView (
             LayoutInflater inflater,
             ViewGroup container,
             Bundle savedInstanceState
     ) {
-        View view = inflater.inflate(R.layout.activity_list, container, false);
+        View view = inflater.inflate(R.layout.activity_detail, container, false);
         return view;
     }
 }
