@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/go_back_btn"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/placeholder"
-        android:textAlignment="center" />
+        app:layout_constraintBottom_toTopOf="@id/go_back_btn">
+
+    </android.support.constraint.ConstraintLayout>
 
     <Button
         android:id="@+id/go_back_btn"
