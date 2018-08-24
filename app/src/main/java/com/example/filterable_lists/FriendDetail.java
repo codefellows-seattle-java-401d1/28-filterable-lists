@@ -26,6 +26,7 @@ public class FriendDetail extends AppCompatActivity{
                 startActivity(new Intent(FriendDetail.this,ActivityMain.class));
             }
         });
+        setContentView(R.layout.activity_friend_detail);
 
     }
 
